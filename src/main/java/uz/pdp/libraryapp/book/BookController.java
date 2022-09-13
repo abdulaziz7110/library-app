@@ -121,6 +121,7 @@ public class BookController {
         List<Integer> authorsIds = bookDto.getAuthorsIds();
 
 
+        System.out.println("sssgit");
         bookDao.addBooksAuthorDB(bookDto.getId(),authorsIds);
         bookDao.addBooksCategories(bookDto.getId(),bookDto.getCategoryId());
 
